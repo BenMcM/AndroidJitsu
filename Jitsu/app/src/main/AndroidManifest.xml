@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jitsu.ben.uk.consumerest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NewThrow" />
+        <activity android:name=".activity.NewAnkleLock" />
+        <activity android:name=".activity.NewArmLock" />
+        <activity android:name=".activity.NewArmLockCounter" />
+        <activity android:name=".activity.NewFingerLock" />
+        <activity android:name=".activity.NewFingerLockApplication" />
+        <activity android:name=".activity.NewGroundWork" />
+        <activity android:name=".activity.NewKata" />
+        <activity android:name=".activity.NewKyusho" />
+        <activity android:name=".activity.NewLegLock" />
+        <activity android:name=".activity.NewLegLockCounter" />
+        <activity android:name=".activity.NewNeckLock" />
+        <activity android:name=".activity.NewWristLock" />
+        <activity android:name=".ViewAll" />
+        <activity android:name=".ListJitsuBeanActivity"></activity>
+    </application>
+
+</manifest>

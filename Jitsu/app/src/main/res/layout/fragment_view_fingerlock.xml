@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jitsu.ben.uk.consumerest.fragment.FragmentViewFingerLock">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fingerlock_fragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="@string/fingerlock_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/fingerlock_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fingerlock_label"
+                android:paddingLeft="15dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/fingerlock_number_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textAlignment="viewStart" />
+            <RelativeLayout
+                android:id="@+id/fingerlock_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fingerlock_number_value">
+                <RelativeLayout
+                    android:id="@+id/fingerlock_details_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/grade_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/fingerlock_grade_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/fingerlock_grade_label"
+                        android:id="@+id/fingerlock_grade_value"
+                        android:layout_alignParentEnd="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                    <TextView
+                        android:text="@string/description_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fingerlock_grade_label"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/fingerlock_description_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fingerlock_description_label"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/fingerlock_description_value"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/fingerlock_edit_details_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" >
+
+                    <RelativeLayout
+                        android:id="@+id/fingerlock_edit_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/grade_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignBottom="@+id/fingerlock_edit_grade_value"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/fingerlock_edit_grade_label"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/fingerlock_edit_grade_label"
+                            android:id="@+id/fingerlock_edit_grade_value"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/description_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fingerlock_edit_grade"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/fingerlock_edit_description_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fingerlock_edit_description_label"
+                        android:layout_alignParentStart="true"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:id="@+id/fingerlock_edit_description_value"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fingerlock_view"
+                android:layout_alignParentStart="true"
+                android:text="@string/edit" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edit_button"
+                android:layout_alignParentEnd="true"
+                android:text="@string/save"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edit_button"
+                android:layout_toLeftOf="@id/save_button"
+                android:text="@string/cancel"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

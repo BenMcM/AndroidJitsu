@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/new_throw_menu_item"
+            android:title="@string/new_throw"/>
+        <item
+            android:id="@+id/new_anklelock_menu_item"
+            android:title="@string/new_anklelock" />
+        <item
+            android:id="@+id/new_armlock_menu_item"
+            android:title="@string/new_armlock"/>
+        <item
+            android:id="@+id/new_armlockcounter_menu_item"
+            android:title="@string/new_armlockcounter"/>
+        <item
+            android:id="@+id/new_fingerlock_menu_item"
+            android:title="@string/new_fingerlock"/>
+        <item
+            android:id="@+id/new_fingerlockapplication_menu_item"
+            android:title="@string/new_fingerlockapplication"/>
+        <item
+            android:id="@+id/new_groundwork_menu_item"
+            android:title="@string/new_groundwork"/>
+        <item
+            android:id="@+id/new_kata_menu_item"
+            android:title="@string/new_kata"/>
+        <item
+            android:id="@+id/new_kyusho_menu_item"
+            android:title="@string/new_kyusho"/>
+        <item
+            android:id="@+id/new_leglock_menu_item"
+            android:title="@string/new_leglock"/>
+        <item
+            android:id="@+id/new_leglockcounter_menu_item"
+            android:title="@string/new_leglockcounter"/>
+        <item
+            android:id="@+id/new_necklock_menu_item"
+            android:title="@string/new_necklock"/>
+        <item
+            android:id="@+id/new_wristlock_menu_item"
+            android:title="@string/new_wristlock"/>
+    </group>
+</menu>
